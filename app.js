@@ -81,7 +81,7 @@ function testing() {
 	for(var i=0;i<piezas.length;i++){
 		var posx = parseFloat(padres[i].firstChild.getAttribute("x"));    
 		var posy = parseFloat(padres[i].firstChild.getAttribute("y"));
-		ide = padres[i].getAttribute("id");
+		ide = padres[i].getAttrgitibute("id");
 		if(origX[ide] == posx && origY[ide] == posy){
 			bien_ubicada = bien_ubicada + 1;
 		}
@@ -90,4 +90,5 @@ function testing() {
 		win.play();
 	}
 }
+
 
